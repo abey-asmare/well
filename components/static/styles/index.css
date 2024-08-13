@@ -91,7 +91,9 @@
 
 
 /* heading section */
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     max-width: 1500px;
     margin-left: auto;
@@ -430,7 +432,7 @@ div.left.description{
     border: 2px solid var(--neutral-300);
     flex: 1 1 100%;
     scroll-snap-align: start;
-    width: clamp(200px, 300px, 340px);
+    /* width: clamp(200px, 300px, 340px); */
     border-radius: 12px;
     padding: 24px;
     display: flex;

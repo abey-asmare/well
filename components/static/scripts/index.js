@@ -92,3 +92,28 @@ function updateActiveCarousel(){
     }
 }
 
+
+
+// links to navigate to
+document.querySelectorAll('.js-navigate-to-login').forEach(navigator =>{
+    navigator.addEventListener('click', ()=>{window.location.href = 'login.html'})
+})
+
+const carouselElements = [
+    `    <div class="vc-container">
+    <img class="provider-img" src="./static/assets/users/provider-1.jpg" alt="service provider image">
+</div>
+`,
+    `    <div class="vc-container">
+    <img class="provider-img" src="./static/assets/users/provider-2.jpg" alt="service provider image">
+    </div>
+    `,
+    `    <div class="vc-container">
+    <img class="provider-img" src="./static/assets/users/provider-3.jpg" alt="service provider image">
+    </div>
+    `,
+    `    <div class="vc-container">
+    <img class="provider-img" src="./static/assets/users/provider-4.jpg" alt="service provider image">
+    </div>
+    `
+]
