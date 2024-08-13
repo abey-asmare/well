@@ -74,7 +74,7 @@ function renderQuestion(index){
             } else {
                 progressBar.style.width = `100%`;
                 setTimeout(() => {
-                    window.location.href = 'index.html'
+                    window.location.href = 'plan.html'
                 }, 600)
             }
         })

@@ -1,6 +1,99 @@
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --primary-50: #EAF5F5;
+    --primary-100: #B6E7E2;
+    --primary-200:#93DCD3;
+    --primary-300:#62CCBF;
+    --primary-400:#43C2B3;
+    --primary-500:#14B3A0;
+    --primary-600:#12A392;
+    --primary-700:#0E7F72;
+    --primary-800:#0B6258;
+    --primary-900:#084B43;
+    --alternative-primary-600:#0FA794; /* description/about background color */
+    --alternative-neutral-50: #F6F9F8; /* for   */
+    --neutral-10: #D9D9D9; /* disabled search bar in the folder */
+
+    --accent-50:#E8F6FC;
+    --accent-100:#B7E3F6;
+    --accent-200:#94D6F2;
+    --accent-300:#63C3EC;
+    --accent-400:#45B8E9;
+    --accent-500:#16A6E3;
+    --accent-600:#1497CF;
+    --accent-700:#1076A1;
+    --accent-800:#0C5B7D;
+    --accent-900:#09465F;
+
+    --neutral-50:#F5FAF9 ;
+    --neutral-100:#ECF4F3;
+    --neutral-200:#E3EDEC;
+    --neutral-300:#D5E2E1;
+    --neutral-400:#C9D5D4;
+    --neutral-500:#C1CDCC;
+    --neutral-600:#BBC4C3;
+    --neutral-700:#ABBCBC;
+    --neutral-900: #454545; /*new added for the contrast. added for the text on the search in the folder. */
+
+    --main-primary-500:#0FA794;
+    --main-accent-500:#16A6E3;
+    --white:#FFFFFF;
+    --black:#000000;
+    --dark-bg:#084B43;
+    --light-bg:#F6F9F8;
+
+    /* font size */
+    --display-72 : 4.5rem;  /* 72px */
+    --display-64 : 4rem;    /* 64px */
+    --heading-01-56px:3.5rem;    /* 56px */
+    --heading-02-48px:3rem;      /* 48px */
+    --heading-03-36px:2.25rem;   /* 36px */
+    --heading-04-32px:2rem;      /* 32px */
+    --heading-05-24px:1.5rem;    /* 24px */
+    --heading-06-16px:1rem;      /* 16px */
+    --text-18:1.125rem;     /* 18px */
+    --text-14:0.875rem;     /* 14px */
+    --text-8:0.5rem;        /*  8px */
+
+    /* font weight */
+    --thin-100: 100;
+    --extralight-200: 200;
+    --light-300: 300;
+    --regular-400: 400;
+    --medium-500: 500;
+    --semibold-600: 600;
+    --bold-700: 700;
+    --xl-bold-800: 800;
+    --black-900: 900;
+    --card-bg-gradient: rgba(0,0,0, 24%);
+
+    /* shadow */
+    --shadow-color: 176deg 8% 65%;
+    --shadow-elevation-low:
+      0.2px 0.3px 0.3px hsl(var(--shadow-color) / 0.6),
+      0.5px 1px 0.9px -4.6px hsl(var(--shadow-color) / 0.32);
+    --shadow-elevation-medium:
+      0.2px 0.3px 0.3px hsl(var(--shadow-color) / 0.56),
+      0.5px 1px 0.9px -2.3px hsl(var(--shadow-color) / 0.39),
+      2.5px 5.1px 4.6px -4.6px hsl(var(--shadow-color) / 0.22);
+    --shadow-elevation-high:
+      0.2px 0.3px 0.3px hsl(var(--shadow-color) / 0.63),
+      0.4px 0.8px 0.7px -1.2px hsl(var(--shadow-color) / 0.51),
+      1.5px 3px 2.7px -2.3px hsl(var(--shadow-color) / 0.4),
+      4.3px 8.8px 7.9px -3.5px hsl(var(--shadow-color) / 0.28),
+      9.8px 20.1px 17.9px -4.6px hsl(var(--shadow-color) / 0.16);
+}
+
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: var(--light-bg);
+    font-family: 'lato', sans-serif;
+    margin-top: 80px;
 }
 
 /*Some CSS property are common to all element*/
@@ -15,11 +108,11 @@
 }
 .looking{
     width: 320px; 
-    height: 30vh;
+    /* height: 30vh; */
 }
 .looking-form{
     width: 320px;
-    height: 25vh;
+    /* height: 25vh; */
 }
 .looking-form > p{
     font-family: sans-serif;
@@ -42,7 +135,7 @@
 }
 .search-now-txt{
     width: 300px;
-    height: 5vh;
+    /* height: 5vh; */
     margin-left: 15px;
     margin-top:2px ;
     text-align: center;
@@ -93,7 +186,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    /* height: 45vh; */
     
 }
 
@@ -155,7 +248,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    /* height: 85vh; */
     
 }
 .container-3{
@@ -163,13 +256,11 @@
     height: 412px;   
 }     
 .div-you{
-    background-color: ;
     width: 302px;
     height: 86px;
     margin-top: 10px;
 }
 .detail{
-    background-color: ;
     width: 302px;
     height: 222px;
     margin-top: 10px;
@@ -219,7 +310,6 @@
     align-items: center;
     width: 302px;
     height: 70px;
-    background-color: ;
     margin-bottom: 10px;
 } 
 .svgs{
@@ -247,12 +337,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    /* height: 85vh; */
    
     margin-bottom: 100px;
 }
 .container-4{
-     background-color: ;
+     background-color: transparent ;
      width:380px;
      /* height: 410px; */
 }
@@ -261,8 +351,6 @@
     width:380px;
     height: 8px;
     display: flex;
-    background-color:;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 .progress-partFour-1{
@@ -310,23 +398,23 @@
     width:380px; 
     height: 130px;
     border-radius: 12px;
-    background-color: #feffff; 
-    border: 1px solid #D5E2E1; 
+    border: 1.4px solid var(--neutral-300);
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .part-four-price-div{
+    padding-top: 10px;
 
 }
 .part-four-price-txt-div{
     display: inline-block;
 }
 .part-four-price-txt-div > p{
-    padding-top: 10px;  
+    text-align: top;
     padding-left: 10px; 
-    font-size: 24px;
+    font-size: 18px;
      font-weight: 600; 
-     background-color: ; 
      width: 330px;
     display: inline-block;
 }
@@ -368,7 +456,7 @@
     width: 120px;
     height: 6px;
     border-radius: 10px;
-    background-color:#D9D9D9;
+    background-color: #D9D9D9;
     margin-right: 10px;
 }
 .progress-partFive-2{
@@ -388,8 +476,8 @@
 .part-five-div{
     width:380px; height: 130px;
     border-radius: 12px;
-    background-color: #fbffff; 
-    border: 1px solid #D5E2E1; 
+    border: 1.4px solid var(--neutral-300);
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -424,12 +512,11 @@
 }
 .part-five-div-2{
     width: 380px;
-    height: 280px;
     border-radius: 12px;
-    background-color: #fbffff;
-    border: 1px solid #D5E2E1;
+    border: 1.4px solid var(--neutral-300);
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-bottom: 8px;
 }
 .part-five-summary-div{
     display: inline-block;
@@ -449,7 +536,7 @@
     padding-left: 10px; 
 }
 .part-five-summary-title-txt > span{
-    margin-left: 170px;
+    margin-left: 148px;
 }
 .part-five-div-2 > hr {
     width: 350px; 
@@ -465,9 +552,10 @@
     width: 330px; 
     display: inline-block; 
     font-weight: 600;
+    width: 100%;
 }
 .part-five-summary-total-txt > span{
-    margin-left: 20px;
+    margin-left: 248px;
 }
 .part-five-summary-desc-txt{
     width: 250px; 
@@ -502,7 +590,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    /* height: 85vh; */
     margin-bottom: 50px;
 }
 .container-6{
@@ -549,9 +637,11 @@
 }
 
 .form-step{
-    width: 380px;
+    width: 320px;
     height: 490px;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 .label-title{
     margin-left: 4px; 
@@ -568,35 +658,44 @@
 }
 .form-step > input{
     margin-top: 8px;
-    border: 2px solid #D5E2E1;
+    border: 1.4px solid var(--neutral-300);
     padding-left: 20px;
-    border-radius: 12px;
+    border-radius: 8px;
     gap: 4px;
     margin-bottom: 10px;
     
 }
-.email-input{
-    width: 300px; 
-    height: 40px;
-}
-.card-input{
-    width: 300px; 
-    height: 40px; 
-}
-
 .form-step > div > input{
     margin-top: 5px;
-    border: 2px solid #D5E2E1;
+    border: 1.4px solid var(--neutral-300);
     padding-left: 20px;
-    border-radius: 12px;
+    border-radius: 8px;
     gap: 4px;
     margin-bottom: 5px;
     
 }
+.form-step > select{
+    width: 322px;
+    height: 45px;
+    margin-top: 5px;
+    border: 1.4px solid var(--neutral-300);
+    padding-left: 20px;
+    border-radius: 8px;
+    gap: 4px;
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.email-input,
+.card-input{
+    height: 40px; 
+}
+
 .card-other-div{
-    width: 155px; height: 40px; 
+    /* width: 155px;  */
+    height: 40px; 
     display: flex; 
-    justify-content: space-evenly; 
+    justify-content: space-between; 
     align-items: center; 
 }
 .date-card-input{
@@ -610,28 +709,16 @@
     padding-right: 8px;
 }
 .name-on-card-input{
-    width: 300px; 
     height: 40px;
 }
-.form-step > select{
-    width: 322px;
-    height: 45px;
-    margin-top: 5px;
-    border: 2px solid #D5E2E1;
-    padding-left: 20px;
-    border-radius: 12px;
-    gap: 4px;
-    color: #777777;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
+
 .pay-pal-btn{
     margin-top: 15px; 
     background-color:#0E7F72; 
     color: white; 
     border: none; 
     border-radius: 8px; 
-    padding: 15px 110px 15px 120px; 
+    padding: 16px; 
     text-align: center;
 }
 .pay-pal-btn:hover{
