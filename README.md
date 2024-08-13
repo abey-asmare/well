@@ -1,6 +1,6 @@
 # Sneak Peek of the Well Platforms
 > [!NOTE]
-> Welcome to the Well Platforms repository! This project is currently being built with React and aims to provide an intuitive user experience from discovery to video chatting.
+> Welcome to the Well Platforms repository! This is not the main branch. This project is currently being built with React and aims to provide an intuitive user experience from discovery to video chatting.
 
 
 WellTalk is a platform offering online mentorship in any field, anytime, anywhere. We include homecare nurse functionality for health support, ensuring users receive prompt, secure results. WellTalk empowers individuals with accessible, expert guidance for personal and professional growth.
