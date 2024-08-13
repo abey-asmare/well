@@ -1,4 +1,4 @@
-# Sneak Peek of the Well Platforms
+# Well Platforms
 > [!NOTE]
 > Welcome to the Well Platforms repository! This is not the main branch. This project is currently being built with React and aims to provide an intuitive user experience from discovery to video chatting.
 
@@ -32,3 +32,4 @@ We hope this sneak peek gives you a clear understanding of the user journey and 
 > open the index.html file located in components/
 
 > Enjoy
+> Reach me at @abey_avi on telegram or linkedin.com/in/abeyasmare/ on linkedin
