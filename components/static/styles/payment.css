@@ -95,6 +95,9 @@ body{
     font-family: 'lato', sans-serif;
     margin-top: 80px;
 }
+input, select{
+    background: none;;
+}
 
 /*Some CSS property are common to all element*/
 /*Part One*/
