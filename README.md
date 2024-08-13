@@ -4,7 +4,9 @@
 
 
 WellTalk is a platform offering online mentorship in any field, anytime, anywhere. We include homecare nurse functionality for health support, ensuring users receive prompt, secure results. WellTalk empowers individuals with accessible, expert guidance for personal and professional growth.
+
 ![thumbnail.png](components%2Fstatic%2Fassets%2Foverview%2Fthumbnail.png)
+
 ## Overview
 This page guides you through the user flow, starting from the discovery page and leading up to the video chatting section. The key routes included are:
 
