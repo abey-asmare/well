@@ -1,0 +1,524 @@
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --primary-50: #EAF5F5;
+    --primary-100: #B6E7E2;
+    --primary-200:#93DCD3;
+    --primary-300:#62CCBF;
+    --primary-400:#43C2B3;
+    --primary-500:#14B3A0;
+    --primary-600:#12A392;
+    --primary-700:#0E7F72;
+    --primary-800:#0B6258;
+    --primary-900:#084B43;
+    --alternative-primary-600:#0FA794; /* description/about background color */
+    --alternative-neutral-50: #F6F9F8; /* for   */
+    --neutral-10: #D9D9D9; /* disabled search bar in the folder */
+
+    --accent-50:#E8F6FC;
+    --accent-100:#B7E3F6;
+    --accent-200:#94D6F2;
+    --accent-300:#63C3EC;
+    --accent-400:#45B8E9;
+    --accent-500:#16A6E3;
+    --accent-600:#1497CF;
+    --accent-700:#1076A1;
+    --accent-800:#0C5B7D;
+    --accent-900:#09465F;
+
+    --neutral-50:#F5FAF9 ;
+    --neutral-100:#ECF4F3;
+    --neutral-200:#E3EDEC;
+    --neutral-300:#D5E2E1;
+    --neutral-400:#C9D5D4;
+    --neutral-500:#C1CDCC;
+    --neutral-600:#BBC4C3;
+    --neutral-700:#ABBCBC;
+    --neutral-900: #454545; /*new added for the contrast. added for the text on the search in the folder. */
+
+    --main-primary-500:#0FA794;
+    --main-accent-500:#16A6E3;
+    --white:#FFFFFF;
+    --black:#000000;
+    --dark-bg:#084B43;
+    --light-bg:#F6F9F8;
+
+    /* font size */
+    --display-72 : 4.5rem;  /* 72px */
+    --display-64 : 4rem;    /* 64px */
+    --heading-01-56px:3.5rem;    /* 56px */
+    --heading-02-48px:3rem;      /* 48px */
+    --heading-03-36px:2.25rem;   /* 36px */
+    --heading-04-32px:2rem;      /* 32px */
+    --heading-05-24px:1.5rem;    /* 24px */
+    --heading-06-16px:1rem;      /* 16px */
+    --text-18:1.125rem;     /* 18px */
+    --text-14:0.875rem;     /* 14px */
+    --text-8:0.5rem;        /*  8px */
+
+    /* font weight */
+    --thin-100: 100;
+    --extralight-200: 200;
+    --light-300: 300;
+    --regular-400: 400;
+    --medium-500: 500;
+    --semibold-600: 600;
+    --bold-700: 700;
+    --xl-bold-800: 800;
+    --black-900: 900;
+    --card-bg-gradient: rgba(0,0,0, 24%);
+
+    /* shadow */
+    --shadow-color: 176deg 8% 65%;
+    --shadow-elevation-low:
+      0.2px 0.3px 0.3px hsl(var(--shadow-color) / 0.6),
+      0.5px 1px 0.9px -4.6px hsl(var(--shadow-color) / 0.32);
+    --shadow-elevation-medium:
+      0.2px 0.3px 0.3px hsl(var(--shadow-color) / 0.56),
+      0.5px 1px 0.9px -2.3px hsl(var(--shadow-color) / 0.39),
+      2.5px 5.1px 4.6px -4.6px hsl(var(--shadow-color) / 0.22);
+    --shadow-elevation-high:
+      0.2px 0.3px 0.3px hsl(var(--shadow-color) / 0.63),
+      0.4px 0.8px 0.7px -1.2px hsl(var(--shadow-color) / 0.51),
+      1.5px 3px 2.7px -2.3px hsl(var(--shadow-color) / 0.4),
+      4.3px 8.8px 7.9px -3.5px hsl(var(--shadow-color) / 0.28),
+      9.8px 20.1px 17.9px -4.6px hsl(var(--shadow-color) / 0.16);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* login section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-inline: 20px;
+}
+
+.login.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px;
+    border: 1.4px solid var(--neutral-300);
+    border-radius: 14px;
+    gap: 20px;
+    min-width: 100px;
+}
+
+form.login-form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    margin: 10px 0;
+
+}
+form.login-form input.input{
+    margin: 10px 0;
+}
+
+.login.container .login.text,
+.register.container .register.text{
+    color: var(--primary-800);
+    font-size: var(--heading-05-24px);
+    font-weight: 600;
+}
+.login.container .btn-lg,
+.register.container .btn-lg
+{
+    cursor: pointer;
+}
+
+.login.container input:focus,
+.register.container input:focus{ 
+    outline: none !important;
+    border-width: 2px;
+ }
+
+.login.container .input,
+.login.container .btn-lg,
+.register.container .input,
+.register.container .btn-lg{
+    font-size: var(--heading-06-16px);
+    color: #181818;
+    min-width: 100px;
+    line-height: 24px;
+    padding: 6px 16px;
+    border: 1px solid var(--neutral-300);
+    border-radius: 8px;
+    background-color: var(--light-bg);
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    gap: 8px;
+}
+
+.login.container .input::placeholder,
+.login.container .btn-lg::placeholder,
+.register.container .input::placeholder,
+.register.container .btn-lg::placeholder{
+    color: #777777;
+}
+
+.login.container .primary.btn-lg,
+.register.container .primary.btn-lg
+{
+    background-color: var(--primary-700);
+    border: none;
+    color: var(--light-bg);
+}
+.login.container .primary.btn-lg:hover,
+.register.container .primary.btn-lg:hover{
+    opacity: .9;
+}
+
+.login.container .text.input:hover,
+.login.container .password.input:hover,
+.login.container .btn-lg.google:hover,
+.login.container .btn-lg.apple:hover,
+
+.register.container .text.input:hover,
+.register.container .password.input:hover,
+.register.container .btn-lg.google:hover,
+.register.container .btn-lg.apple:hover{
+    border: 2px solid var(--neutral-300);
+}
+.login.container .btn-lg img,
+.register.container .btn-lg img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.login.container .divider,
+.register.container .divider{
+    grid-template-columns: 1fr 30px 1fr ;
+    gap: 20px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+.login.container .divider div,
+.register.container .divider div{
+    color: #777777;
+    height: 1px;
+    border: 1px solid;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.login.container .divider p,
+.register.container .divider p,
+.login.container p.dont-have-account
+{
+    font-size: var(--heading-06-16px);
+    color: #777777;
+}
+.login.container p.dont-have-account span{
+    padding-left: 4px;  ;
+    color: var(--primary-900);
+}
+
+@media (max-width: 768px){
+    .login.container{
+        border: none;
+        padding: 20px 30px;
+
+    }
+}
+/* end login section */
+
+/* register section */
+.register.container .preference-container{
+    margin-bottom: 20px;
+
+}
+section.first{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.social-logins{
+    display:flex;
+   justify-content: center;
+    gap:20px;
+}
+.social-logins > *{
+    flex:1;
+}
+
+section.middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    margin-top: 32px;
+}
+section.middle > .form-with-desc:nth-child(n+3){
+   grid-column: 1 / -1;
+}
+section.middle > .form-with-desc *{
+    width: 100%;
+}
+
+
+.form-with-desc label{
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #181818;
+    font-size: var(--text-18);
+}
+.form-with-desc .dropdown{
+    /* resetting arrow */
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-color: #fafafa;
+    width: 100%;
+    /*resetting the default chevron button and adding a custom one
+      because we can't modify it using a padding */
+    background-image: url("../assets/icons/chevron-down.svg");
+    background-size: 16px;
+    background-position: calc(100% - 16px);
+    background-repeat: no-repeat;
+}
+
+.form-with-desc .password-container{
+    position:relative;
+}
+
+.form-with-desc button.show-password-btn{
+    position: absolute;
+    top:50%;
+    background-color: transparent;
+    border: none;
+    right: 16px;
+    transform: translateY(-50%);
+    text-align: end;
+    height: 24px;
+    width: 24px;
+}
+
+.form-with-desc svg.eye-slash,
+.form-with-desc svg.eye{
+    height: 20px;
+    width: 20px;
+    color: #777777;
+    cursor: pointer;
+}
+
+.form-with-desc svg.hide{
+    display: none;
+}
+
+
+.preference-container .text{
+   display: flex;
+   justify-content: center;
+   gap: 100px;
+   align-items: center;
+   padding: 16px;
+   font-size: var(--text-18);
+   line-height: 30px;
+   color: #181818;
+}
+.text .mentor,
+.text .mentee{
+    flex:1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.preference-container .overlay{
+    margin: auto;
+    width: 100%;
+    height: 2px;
+    background-color: var(--neutral-500);
+    border-radius: 3px;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.preference-container .overlay .first{
+    background-color:var(--primary-700);
+    border-radius: 3px;
+    height: 3px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    transition: all .2s;
+}
+.preference-container .overlay .first.mentor-selected{
+    left: 0;
+    right: 50%;
+
+}
+.preference-container .overlay .first.mentee-selected{
+    left: 50%;
+    right: 0;
+
+}
+
+.password.strength.container .text.strength{
+    margin-bottom: 8px;
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
+.password.strength.container .strength.visual{
+    display: inline-block;
+    width: 66px;
+    height: 4px;
+    background-color: var(--neutral-500);
+    border-radius: 3px;
+    position: relative;
+}
+.password.strength.container .strength.visual .key-strength{
+    display:inline-block;
+    width: 0%;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    transition: all 0.6s ease;
+    /* animation: animate_strength 2s ease infinite forwards; */
+}
+
+.password.strength.container .strength.visual .key-strength.weak{
+    background-color: #d81212;
+    color: #d81212;
+    width: 25%;
+}
+
+.password.strength.container .strength.visual .key-strength.medium{
+    background-color: #FF9A00;
+    color: #FF9A00;
+    width: 60%
+}
+
+.password.strength.container .strength.visual .key-strength.strong{
+    background-color: var(--primary-700);
+    color: var(--primary-700) !important;
+    width: 100%
+}
+
+/* have some animation to transform to the y direction to give
+    the user feedback about it*/
+/* @keyframes animate_strength{
+    0%{width: 0%;}
+    25%{width: 25%;}
+    50%{width:60%;}
+    100%{width:100%;}
+} */
+
+
+
+
+.password.strength.container{
+    color: #777777;
+    font-weight: 500;
+    font-size: 16px;
+}
+.password.strength.container ul{
+    margin-left: 20px;
+    margin-top:8px;
+}
+.password.strength.container .list-item{
+    font-weight: 400;
+    margin-bottom: 8px;
+    transition: all .4s;
+}
+
+.password.strength.container .list-item.test-passed{
+    color: var(--primary-700);
+    font-weight: 600;
+}
+
+section.last{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+    margin-top: 8px; 
+}
+section.last .user-agreement{
+    color: #181818;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap:8px;
+}
+
+.user-agreement .primary.checkbox{
+    cursor: pointer;
+    height:24px;
+    width:24px;
+    accent-color:  var(--primary-600);
+}
+section.last .user-agreement a{
+    color: var(--primary-700);
+}
+
+section.last .login.section .input.btn{
+    margin:auto;
+}
+
+.login.section p{
+    margin-top:18px;
+    color:#777777; 
+}
+
+.register.container .login.section p a,
+.login.container span a
+{
+    color: var(--primary-700);
+    margin-left: 4px ;
+}
+
+/* error messages in the login and register */
+.login.container span.error{
+    color: #d81212;
+}
+.register.container span.error{
+    color: #d81212;
+    display: block;
+    margin: 8px 4px;
+}
+
+.forgot-password-span{
+    margin: 10px 0;
+    
+}
+.forgot-password {
+    color: var(--primary-800);
+}
+
+
+@media (max-width: 610px){
+    .social-logins{
+        flex-direction: column;
+    }
+    section.middle{
+        grid-template-columns: 1fr;
+    }
+    .password.strength.container{
+        color: #777777;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .password.strength.container ul{
+        font-size: 14px;
+    }
+}
+/* end register section */
